@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.hero_herosection {
+  /* Dégradé avec image de fond */
+  background: 
+    linear-gradient(170deg, transparent 20%, #000000) 100% center / cover,
+    url('/images/Apart1.png') no-repeat center center / cover;
+  height: 80vh; 
+  width: 100%; 
+  position: relative; /* Position relative pour des éléments enfants positionnés */
+  color: GR;
+}
+.imagestud{
+padding-right :6%;
+padding-top :4%;
+padding-bottom :5%;
+background-color: #072F5B;
+margin-top:-295px;
+width:35%;
+height:50%;
+border-top-right-radius:50% ;
+border-bottom-right-radius:50% ;
+}
+
