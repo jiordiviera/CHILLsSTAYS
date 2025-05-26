@@ -2,8 +2,17 @@ import React from 'react';
 import Header from '../layaout/header';
 import "../index.css";
 import SearchBar from '../Components/Searchbar';
-
+import Product from '../Components/product';
+import image from '/images/ved.jpg';
 function Acceuil() {
+  const products=[{
+    id:1,
+    location:'Appartement meuble Akwa',
+    price:35000,
+    description:'Cet appartement de 60 m² dispose d\'une cuisine, de deux douches et de trois chambres, offrant un espace confortable et fonctionnel.',
+    image:image,
+    
+  }]
   return (
     <>
       <section className="relative min-h-screen h-[20%] bg-center bg-cover drop-shadow-2xl"
@@ -42,11 +51,26 @@ function Acceuil() {
       <section className="px-6 md:px-20 py-6 text-center md:text-left">
         <h3 className="text-lg md:text-xl font-bold mb-2">
           Nos Postes Récents
+          <div className=''>
+           {products.map((prod) => (
+            <Product
+            key={prod.id}
+             location={prod.location}
+             price={prod.price}
+             description={prod.description}
+             image={prod.image}
+
+             />
+            ))}
+          </div>
         </h3>
         <hr className="border-t border-gray-400 w-1/3 mx-auto md:mx-0" />
       </section>
     </>
+    
   );
+
+  <Product/>
 }
 
 export default Acceuil;
