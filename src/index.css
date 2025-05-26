@@ -6,6 +6,11 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+ 
+}
+.thebody{
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 
@@ -30,4 +35,12 @@ height:50%;
 border-top-right-radius:50% ;
 border-bottom-right-radius:50% ;
 }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE */
+  scrollbar-width: none;     /* Firefox */
+}
+
 
