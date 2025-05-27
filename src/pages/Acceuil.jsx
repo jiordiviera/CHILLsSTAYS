@@ -91,6 +91,60 @@ function Acceuil() {
         
         
       </section>
+      
+     <section className="bg-[#0D2F66] py-10">
+  <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10 px-4">
+
+    
+    <div className="flex flex-col items-center text-center">
+      <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-md">
+        <img src="/images/step1.png" alt="Étape 1" className="w-24 h-24 object-contain" />
+      </div>
+      <p className="mt-4 text-green-500 font-bold text-lg">Trouvez & Réservez</p>
+      <p className="text-white text-base">votre logement</p>
+    </div>
+
+   
+    <span className="text-green-500 text-5xl font-bold">+</span>
+
+   
+    <div className="flex flex-col items-center text-center">
+      <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-md">
+        <img src="/images/step2.png" alt="Étape 2" className="w-24 h-24 object-contain" />
+      </div>
+      <p className="mt-4 text-green-500 font-bold text-lg">Recevez</p>
+      <p className="text-white text-base">votre contrat de location</p>
+    </div>
+
+    
+    <span className="text-green-500 text-5xl font-bold">+</span>
+
+    
+    <div className="flex flex-col items-center text-center">
+      <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-md">
+        <img src="/images/step3.png" alt="Étape 3" className="w-24 h-24 object-contain" />
+      </div>
+      <p className="mt-4 text-green-500 font-bold text-lg">Renvoyez</p>
+      <p className="text-white text-base">votre contrat de location</p>
+    </div>
+
+   
+    <span className="text-green-500 text-5xl font-bold">{'»'}</span>
+
+   
+    <div className="flex flex-col items-center text-center">
+      <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-md">
+        <img src="/images/step4.png" alt="Étape 4" className="w-24 h-24 object-contain" />
+      </div>
+      <p className="mt-4 text-green-500 font-bold text-lg">Bravo !</p>
+      <p className="text-white text-base leading-tight">
+        Votre logement est mis à<br /> votre disposition
+      </p>
+    </div>
+
+  </div>
+</section>
+
     </>
     
   );
