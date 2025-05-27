@@ -8,6 +8,7 @@ import { CheckCircle, Home, CalendarCheck, Headset, Zap } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
 import Button from '../Components/Button';
 import Product from '../Components/product';
+import Carossel from "../Components/Carossel"
 import imageProduct from '/images/ved.jpg';
 
 function Acceuil(props) {
@@ -101,10 +102,37 @@ function Acceuil(props) {
         </section>
 
         <section className="px-6 md:px-20 py-6 text-center md:text-left">
+          <div className="flex justify-between items-center ">
           <h3 className="text-lg md:text-xl font-semibold mb-2">
             Nos Postes Récents
           </h3>
-          <hr className="border-t border-gray-400 w-1/3 mx-auto md:mx-0" />
+          <Button title="voir plus" className="bg-[#001F4D] text-white text-sm px-4 py-1 rounded hover:bg-blue-900" />
+          </div>
+          <hr className="border-t mt-1 border-gray-400 mb-6 w-1/3 w-full mx-auto md:mx-0" />
+          <div className='mt-10'>
+            {products.map((prod) => (
+              <Product
+                key={prod.id}
+                location={prod.location}
+                price={prod.price}
+                description={prod.description}
+                image={prod.image}
+              />
+            ))}
+          </div>
+
+          <div className='mt-10'>
+            {products.map((prod) => (
+              <Product
+                key={prod.id}
+                location={prod.location}
+                price={prod.price}
+                description={prod.description}
+                image={prod.image}
+              />
+            ))}
+          </div>
+
           <div className='mt-10'>
             {products.map((prod) => (
               <Product
@@ -214,7 +242,7 @@ function Acceuil(props) {
             <h2 className="text-lg font-semibold">Trouvez un logement adéquat</h2>
             <Button title="voir plus" className="bg-[#001F4D] text-white text-sm px-4 py-1 rounded hover:bg-blue-900" />
           </div>
-          <hr className="border-t border-gray-400 mb-6 w-1/3 w-full mx-auto md:mx-0" />
+          <hr className="border-t mt-1 border-gray-400 mb-6 w-1/3 w-full mx-auto md:mx-0" />
 
           {/* Grille des régions */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -233,18 +261,17 @@ function Acceuil(props) {
                 </span>
               </div>
             ))}
-          </div>
-
-          {/* Section appel à l'action */}
-          <div className="text-center w-full mt-4 ml-[110px]">
-            <h3 className="text-blue-900 font-semibold whitespace-nowrap text-lg mb-1">
+            {/* Section appel à l'action */}
+          <div className="text-center w-full mt-4 ml-[125px]">
+            <h3 className="text-[#072F5B] font-semibold whitespace-nowrap text-lg mb-1">
               Vous recherchez un logement?
             </h3>
             <p className="text-sm text-gray-600 mb-4">N’hésitez plus !</p>
-            <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded shadow">
-              Rechercher Un Logement
-            </button>
+            <Button title="Rechercher Un Logement" className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded shadow" />
           </div>
+          </div>
+
+          
         </section>
 
         <section className="px-4 py-12 md:px-20 bg-white">
