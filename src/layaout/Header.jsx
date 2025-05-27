@@ -5,14 +5,14 @@ import React from "react";
 export default function Header() {
   return (
     <header className="bg-[#072F5B] text-white py-3 px-6 shadow-md">
-      <div className="flex justify-between items-center flex-wrap">
+      <div className="flex justify-between items-center text-[16px] flex-wrap">
         {/* Logo */}
         <div className="flex ml-[50px] items-center gap-2 text-green-600 text-3xl font-bold italic">
           <span>ChillStays</span>
         </div>
 
         {/* Navigation */}
-        <nav className="flex items-center gap-8 text-xl">
+        <nav className="flex items-center gap-8 text-[16px]">
           <div className="flex ml-[100px] mt-[100px] mt-[50px] items-center gap-8 text-gray-300">
             <a href="#" className="flex items-center gap-1 hover:text-white">
               <Home className="w-4 h-4" />
@@ -41,7 +41,7 @@ export default function Header() {
         </nav>
 
         {/* Contact Info */}
-        <div className="flex flex-col text-right text-xl">
+        <div className="flex flex-col text-right text-[16px]">
           <span className="text-gray-400">Contactez-Nous</span>
           <span className="flex items-center text-green-500">
             <Phone className="w-4 h-4 mr-1" /> +237 654 589 172
@@ -52,7 +52,7 @@ export default function Header() {
         </div>
 
         {/* Connexion */}
-        <div className="ml-4 mr-[50px] flex items-center gap-1 text-xl cursor-pointer p-2 bg-[#28A745] text-white hover:underline">
+        <div className="ml-4 mr-[50px] flex items-center gap-1 text-[16px] cursor-pointer p-2 bg-[#28A745] text-white hover:underline">
           <LogIn className="w-4 h-4" />
           connexion
         </div>
