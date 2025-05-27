@@ -5,7 +5,7 @@ import SearchBar from '../Components/Searchbar';
 import Carossel from '../Components/Carossel';
 import image from '/images/Apart1.png';
 import PromoCard from '../Components/PromoCard';
-import { CheckCircle, Home, CalendarCheck, Headset } from "lucide-react"
+import { CheckCircle, Home, CalendarCheck, Headset, Zap } from "lucide-react"
 import { useNavigate } from 'react-router-dom';
 import Button from '../Components/Button';
 
@@ -192,7 +192,6 @@ const goToRegion = (regionName) => {
     </section>
 
     <section className="py-20 mr-[70px] ml-[70px] px-4 max-w-7xl mx-auto">
-      {/* Titre + bouton voir plus */}
       <div className="flex justify-between items-center ">
         <h2 className="text-lg font-semibold">Trouvez un logement adéquat</h2>
         <Button title="voir plus" className="bg-[#001F4D] text-white text-sm px-4 py-1 rounded hover:bg-blue-900" />
@@ -230,7 +229,118 @@ const goToRegion = (regionName) => {
       </div>
       </div>
     </section>
+
+    <section className="px-4 py-12 md:px-20 bg-white">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h2 className="text-2xl font-bold text-[#072F5B] mb-6 flex items-center">
+        <span className="mr-2"><img src='/images/public-service (1).png' className='w-10'/></span> Nos Services
+      </h2>
+      <p className="mb-4">Voici ce que nous offrons à nos propriétaires :</p>
+      <ul className="space-y-4 text-gray-700 text-[16px]">
+        <li className="flex items-start gap-2">
+          <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
+          <div>
+            <strong>Visibilité maximale</strong><br />
+            Votre annonce est diffusée auprès de milliers de voyageurs chaque jour.
+          </div>
+        </li>
+        <li className="flex items-start gap-2">
+          <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
+          <div>
+            <strong>Support 7j/7</strong><br />
+            Une équipe dédiée pour vous aider à tout moment.
+          </div>
+        </li>
+        <li className="flex items-start gap-2">
+          <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
+          <div>
+            <strong>Paiements sécurisés</strong><br />
+            Nous gérons les transactions pour que vous soyez payé en toute sécurité.
+          </div>
+        </li>
+        <li className="flex items-start gap-2">
+          <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
+          <div>
+            <strong>Assurance incluse</strong><br />
+            Une couverture contre les dommages pendant les séjours.
+          </div>
+        </li>
+        <li className="flex items-start gap-2">
+          <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
+          <div>
+            <strong>Outils de gestion faciles</strong><br />
+            Tableau de bord complet pour suivre vos réservations, revenus, et messages.
+          </div>
+        </li>
+        <li className="flex items-start gap-2">
+          <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
+          <div>
+            <strong>Évaluations fiables</strong><br />
+            Chaque locataire est noté et vérifié, pour une tranquillité d'esprit.
+          </div>
+        </li>
+      </ul>
     </div>
+
+    <div className="flex justify-center">
+      <img
+        src="/images/25.jpg" 
+        alt="Service"
+        className="rounded-md shadow-lg w-full h-[500px] mt-[10%] ml-4 max-w-md object-cover"
+      />
+    </div>
+  </div>
+</section>
+
+<section className="px-4 py-12 md:px-20 ">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+    
+    <div className="flex justify-center">
+      <img
+        src="/images/7.jpg"
+        alt="Propriétaires heureux"
+        className="rounded-md shadow-lg w-full max-w-md object-cover"
+      />
+    </div>
+    <div className="space-y-4 text-gray-800">
+      <div className="flex items-center space-x-3">
+        <img
+          src="/images/l1.jpg" 
+          alt="Logo maison"
+          className="w-10 h-10"
+        />
+        <h3 className="text-lg font-semibold text-[#072F5B]">Pour les Propriétaires</h3>
+      </div>
+       <h2 className="text-xl font-bold text-[#072F5B] ">
+        Vous souhaitez proposer des logements ?
+      </h2>
+       <p className="text-black font-semibold">
+        Chillstays vous accompagne<br />
+        de la mise en ligne à la location
+      </p>
+      <ul className="space-y-2">
+        <li className="flex items-center font-semibold text-black">
+          Une visibilité accrue
+        </li>
+        <li className="flex items-center  font-semibold text-black">
+          Des contacts sérieux
+        </li>
+        <li className="flex items-center  font-semibold text-black">
+          Un outil de gestion adapté
+        </li>
+      </ul>
+
+    
+      < div className="  text-white  rounded-md font-semibold pl-20">
+        <Button title="Contactez-Nous"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+    
     </>
   );
 }
