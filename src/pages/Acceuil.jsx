@@ -10,6 +10,7 @@ import Button from '../Components/Button';
 import Product from '../Components/product';
 import Carossel from "../Components/Carossel"
 import imageProduct from '/images/ved.jpg';
+import Footer from '../Components/footer';
 
 function Acceuil(props) {
   const tab = [{
@@ -385,12 +386,12 @@ function Acceuil(props) {
 
       
          <section className="bg-[#0D2F66] py-10">
-         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10 px-4">
+         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-6 px-4">
 
     
           <div className="flex flex-col items-center text-center">
           <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-md">
-          <img src="/images/step1.png" alt="Étape 1" className="w-24 h-24 object-contain" />
+          <img src="/images/f1.jpg" alt="Étape 1" className="w-24 h-24 object-contain" />
           </div>
           <p className="mt-4 text-green-500 font-bold text-lg">Trouvez & Réservez</p>
           <p className="text-white text-base">votre logement</p>
@@ -402,7 +403,7 @@ function Acceuil(props) {
    
           <div className="flex flex-col items-center text-center">
           <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-md">
-          <img src="/images/step2.png" alt="Étape 2" className="w-24 h-24 object-contain" />
+          <img src="/images/f4.jpg" alt="Étape 2" className="w-24 h-24 object-contain" />
           </div>
           <p className="mt-4 text-green-500 font-bold text-lg">Recevez</p>
           <p className="text-white text-base">votre contrat de location</p>
@@ -414,7 +415,7 @@ function Acceuil(props) {
     
           <div className="flex flex-col items-center text-center">
           <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-md">
-          <img src="/images/step3.png" alt="Étape 3" className="w-24 h-24 object-contain" />
+          <img src="/images/f3.jpg" alt="Étape 3" className="w-24 h-24 object-contain" />
           </div>
           <p className="mt-4 text-green-500 font-bold text-lg">Renvoyez</p>
           <p className="text-white text-base">votre contrat de location</p>
@@ -426,7 +427,7 @@ function Acceuil(props) {
         
           <div className="flex flex-col items-center text-center">
             <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-md">
-              <img src="/images/step4.png" alt="Étape 4" className="w-24 h-24 object-contain" />
+              <img src="/images/f5.jpg" alt="Étape 4" className="w-24 h-24 object-contain" />
             </div>
             <p className="mt-4 text-green-500 font-bold text-lg">Bravo !</p>
             <p className="text-white text-base leading-tight">
@@ -436,6 +437,7 @@ function Acceuil(props) {
 
         </div>
       </section>
+      <Footer />
     </>
   );
 }
