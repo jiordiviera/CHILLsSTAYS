@@ -10,7 +10,7 @@ import Button from '../Components/Button';
 import Product from '../Components/product';
 import Carossel from "../Components/Carossel"
 import imageProduct from '/images/ved.jpg';
-import Footer from '../Components/footer';
+import Footer from '../layaout/Footer';
 
 function Acceuil(props) {
   const tab = [{
@@ -67,7 +67,7 @@ function Acceuil(props) {
   return (
     <>
       <section className="relative min-h-[500px] bg-center bg-cover drop-shadow-2xl"
-        style={{
+        style={{ 
           backgroundImage: "url('/images/Apart1.png')",
           boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.7)',
         }}>
@@ -87,13 +87,13 @@ function Acceuil(props) {
           </div>
         </div>
 
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-6">
           <SearchBar />
         </div>
       </section>
 
       <div className='thebody'>
-        <section className="px-6 md:px-20 py-12 text-center md:text-left">
+        <section className="px-6 py-12 md:px-20 text-center md:text-left">
           <h3 className="text-lg md:text-xl font-semibold">
             Vous cherchez un logement pour un séjour inoubliable ?
           </h3>
@@ -102,7 +102,7 @@ function Acceuil(props) {
           </div>
         </section>
 
-        <section className=" md:px-20  text-center md:text-left">
+        <section className=" px-6  md:px-20  text-center md:text-left">
           <div className="flex justify-between items-center ">
           <h3 className="text-lg md:text-xl font-semibold mb-2">
             Nos Postes Récents
@@ -147,7 +147,7 @@ function Acceuil(props) {
           </div>
         </section>
 
-        <section className="px-6 md:px-20 py-6 text-center md:text-left">
+        <section className="px-6 md:px-20 py-12 text-center md:text-left">
           <div>
             <h3 className="text-lg md:text-xl font-semibold">Offres Speciales</h3>
           </div>
@@ -179,16 +179,13 @@ function Acceuil(props) {
           </div>
         </section>
 
-        <section className="px-4 py-8 mt-[50px] mr-[70px] ml-[70px]">
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-6">
-            {/* Image gauche */}
+        <section className="px-6 p-12 mr-[60px] ml-[60px]">
+          <div className="max-w-full mx-auto grid md:grid-cols-2 items-center gap-6">
             <img
               src="/images/21.jpg"
               alt="clients heureux"
               className="w-full h-auto object-cover rounded-md shadow-md"
             />
-
-            {/* Contenu à droite */}
             <div className="space-y-4">
               <h2 className="text-xl mt-[-40px] mb-[50px] md:text-2xl font-bold text-center text-[#072F5B]">
                 Pourquoi Choisir Notre Plateforme ?
@@ -238,7 +235,7 @@ function Acceuil(props) {
           </div>
         </section>
 
-        <section className="py-20 mr-[70px] ml-[70px] px-4 max-w-7xl mx-auto">
+        <section className="px-6 p-12 mr-[70px] ml-[70px] max-w-full mx-auto">
           <div className="flex justify-between items-center ">
             <h2 className="text-lg font-semibold">Trouvez un logement adéquat</h2>
             <Button title="voir plus" className="bg-[#001F4D] text-white text-sm px-4 py-1 rounded hover:bg-blue-900" />
@@ -275,7 +272,7 @@ function Acceuil(props) {
           
         </section>
 
-        <section className="px-4 py-12 md:px-20 bg-white">
+        <section className="px-6 p-12 md:px-20">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl font-bold text-[#072F5B] mb-6 flex items-center">
@@ -338,16 +335,16 @@ function Acceuil(props) {
           </div>
         </section>
 
-        <section className="px-4 py-12 md:px-20 ">
+        <section className="px-6 p-12 md:px-20 ">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center">
               <img
                 src="/images/7.jpg"
                 alt="Propriétaires heureux"
-                className="rounded-md shadow-lg w-full max-w-md object-cover"
+                className="rounded-md shadow-lg w-full max-w-md  object-cover"
               />
             </div>
-            <div className="space-y-4 text-gray-800">
+            <div className="space-y-4 pl-6 text-gray-800">
               <div className="flex items-center space-x-3">
                 <img
                   src="/images/l1.jpg"
@@ -359,18 +356,21 @@ function Acceuil(props) {
               <h2 className="text-xl font-bold text-[#072F5B] ">
                 Vous souhaitez proposer des logements ?
               </h2>
-              <p className="text-black font-semibold">
-                Chillstays vous accompagne<br />
+              <p className="text-black  font-semibold">
+                Chillstays vous accompagne
                 de la mise en ligne à la location
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-2 pl-5">
                 <li className="flex items-center font-semibold text-black">
+                <CheckCircle className="text-green-500 w-5 h-5 m-2" />
                   Une visibilité accrue
                 </li>
                 <li className="flex items-center font-semibold text-black">
+                <CheckCircle className="text-green-500 w-5 h-5 m-2" />
                   Des contacts sérieux
                 </li>
                 <li className="flex items-center font-semibold text-black">
+                <CheckCircle className="text-green-500 w-5 h-5 m-2" />
                   Un outil de gestion adapté
                 </li>
               </ul>
@@ -385,7 +385,7 @@ function Acceuil(props) {
       </div>
 
       
-         <section className="bg-[#0D2F66] py-10">
+         <section className="bg-[#0D2F66] px-6 p-12">
          <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-6 px-4">
 
     
@@ -434,10 +434,14 @@ function Acceuil(props) {
               Votre logement est mis à<br /> votre disposition
             </p>
           </div>
-
         </div>
-      </section>
-      <Footer />
+        <div >
+        <hr className="my-8 border-t  border-gray-100 " />
+        <Footer />
+        </div>
+        </section>
+        
+      
     </>
   );
 }
