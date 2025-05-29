@@ -4,29 +4,29 @@ import "../index.css";
 
 export default function PromoCard(props) {
   return (
-    <div className="border border-[#072F5B] rounded-lg max-w-full m-4 p-4 shadow-md hover:shadow-lg transition-shadow duration-200">
-      
+    <div className="bg-white border border-[#072F5B] ml-4 mr-4 rounded-lg shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
       <img
         src={props.image}
         alt="offre"
-        className="w-full h-[200px] object-cover rounded-lg mb-4"
+        className="w-full h-56 object-cover"
       />
-
-      <h3 className="text-left p-4 text-[#072F5B] font-bold text-lg mb-2">
-        {props.title}
-      </h3>
-      
-      <div className="flex flex-col pl-4 items-left text-left">
-        <p className="text-sm ">{props.description0}</p>
-        <p className="text-sm ">
-          {props.description1} <span className="font-bold">{props.pourcentage}</span> {props.description2}
-          <br />
-          <span className="font-bold text-[#072F5B]">{props.rang}</span> {props.description3}
-        </p>
-      </div>
-
-      <div className="flex justify-center mt-4">
-        <Button title="Consulter" />
+      <div className="p-6">
+        <h3 className="text-[#072F5B] font-semibold text-lg mb-3">
+          {props.title}
+        </h3>
+        <div className="text-gray-600 text-sm space-y-1">
+          <p>{props.description0}</p>
+          <p>
+            {props.description1}{" "}
+            <span className="font-bold">{props.pourcentage}</span> {props.description2}
+          </p>
+          <p>
+            <span className="font-bold text-[#072F5B]">{props.rang}</span> {props.description3}
+          </p>
+        </div>
+        <div className="mt-5 text-right">
+          <Button title="Consulter" />
+        </div>
       </div>
     </div>
   );

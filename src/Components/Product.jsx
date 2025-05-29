@@ -40,7 +40,7 @@ function Product(props) {
       </div>
       <div className="md:w-1/2 w-full flex flex-col justify-between p-4">
         <div className='mt-[-50px]'>
-          <h2 className="text-2xl font-semibold text-right pr-5 mt-[30px] text-[#072F5B] mb-2">{props.location}</h2>
+          <h2 className="text-2xl font-semibold text-right pr-5 pt-[20px] text-[#072F5B] mb-2">{props.location}</h2>
           <p className="text-sm text-gray-700 mb-1">à partir de</p>
           <p className="text-2xl font-bold text-[#072F5B] mb-4">{props.price} FCFA / jours</p>
           <p className="text-gray-600 pr-5 text-sm leading-snug text-justify mb-6">
@@ -48,10 +48,8 @@ function Product(props) {
           </p>
         </div>
 
-        <div className="mt-auto">
-          <div className="w-fit  ml-40 rounded-md text-white font-medium text-2xl p-10 px-6 py-2">
+         <div className="mt-auto ml-[150px]">
             <Button title="En savoir plus" />
-          </div>
         </div>
       </div>
     </div>
