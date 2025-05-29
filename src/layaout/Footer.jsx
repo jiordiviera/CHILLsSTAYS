@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import { Zap } from 'lucide-react';
 
 export default function Footer() {
   return (
     <footer className="bg-[#0D2F66] text-white pt-12 pb-6 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 pl-[100px] pr-[100px]">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h2 className="text-2xl font-bold mb-4">Chillstays</h2>
-          <p className=" text-white/60 text-sm text-justify leading-relaxed tracking-normal pr-10 max-w-lg ">
+          <p className=" text-white/60 text-sm leading-relaxed tracking-normal max-w-lg ">
             Nous sommes une marketplace dédiée à la vente d'articles uniques et de qualité près de chez vous. Rejoignez
             notre communauté pour acheter et vendre en toute confiance. ou propriétaire d’un appartement meublé
           </p>
