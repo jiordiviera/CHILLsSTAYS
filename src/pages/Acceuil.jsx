@@ -10,7 +10,8 @@ import Button from '../Components/Button';
 import Product from '../Components/product';
 import Carossel from "../Components/Carossel"
 import imageProduct from '/images/ved.jpg';
-import Footer from '../Components/footer';
+import Footer from '../layaout/Footer';
+import { Link } from 'react-router-dom';
 
 function Acceuil(props) {
   const tab = [{
@@ -107,9 +108,13 @@ function Acceuil(props) {
           <h3 className="text-lg md:text-xl font-semibold mb-2">
             Nos Postes Récents
           </h3>
+          <Link to="/nospostesrecent">
           <Button title="voir plus" className="bg-[#001F4D] text-white text-sm px-4 py-1 rounded hover:bg-blue-900" />
+          </Link>
+          
           </div>
           <hr className="border-t mt-1 border-gray-400 mb-6 w-1/3 w-full mx-auto md:mx-0" />
+      
           <div className='mt-10'>
             {products.map((prod) => (
               <Product

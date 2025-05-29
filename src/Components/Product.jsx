@@ -10,7 +10,7 @@ function Product(props) {
   };
 
   return (
-    <div className="bg-white shadow-sm overflow-hidden flex flex-col md:flex-row gap-4 p-6 max-w-full mx-auto rounded-lg">
+    <div className="bg-white shadow-sm overflow-hidden flex flex-col md:flex-row gap-4 p-6 max-w-[95%] mx-auto rounded-lg">
 
       <div className="md:w-1/2 w-full relative">
         <img
@@ -49,7 +49,7 @@ function Product(props) {
         </div>
 
         <div className="mt-auto">
-          <div className="w-fit bg-green-600 ml-40 rounded-md text-white font-medium text-sm px-6 py-2">
+          <div className="w-fit  ml-40 rounded-md text-white font-medium text-2xl p-10 px-6 py-2">
             <Button title="En savoir plus" />
           </div>
         </div>
