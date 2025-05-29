@@ -37,7 +37,7 @@ export default function Header() {
           <div className="flex gap-2 ml-10">
           <LanguageSelector />
           </div>
-          <Link to="publiezappartement" className="flex items-centern gap-1 bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700 transition">
+          <Link to="publiezappartement" className="flex items-center gap-1 bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700 transition">
           <img src='/images/file.png' className='w-5 h-5' />
             <span>Publiez Votre Appartement</span>
           </Link>

@@ -4,16 +4,15 @@ import "../index.css";
 import SearchBar from '../Components/Searchbar';
 import image from '/images/Apart1.png';
 import PromoCard from '../Components/PromoCard';
-import { CheckCircle, Home, CalendarCheck, Headset, Zap, } from "lucide-react";
+import { CheckCircle, Home, CalendarCheck, Headset, Zap } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
 import Button from '../Components/Button';
 import Product from '../Components/product';
 import Carossel from "../Components/Carossel"
 import imageProduct from '/images/ved.jpg';
 import Footer from '../layaout/Footer';
-import { Link } from 'react-router-dom';
 
-function Acceuil(props) {
+function AcceuilEtudiant(props) {
   const tab = [{
     id: "1",
     title: "profitez d'offre exclusives, concues specialement pour vous",
@@ -69,7 +68,7 @@ function Acceuil(props) {
     <>
       <section className="relative min-h-[500px] bg-center bg-cover drop-shadow-2xl"
         style={{ 
-          backgroundImage: "url('/images/Apart1.png')",
+          backgroundImage: "url('/images/16.jpg')",
           boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.7)',
         }}>
         <div className="absolute top-0 left-0 w-full">
@@ -84,7 +83,7 @@ function Acceuil(props) {
 
         <div className="flex justify-center mt-4">
           <div className="bg-white bg-opacity-80 px-4 py-2 rounded-full text-[#28A745] text-lg md:text-xl font-semibold cursor-pointer hover:underline">
-            <Link to="/acceuiletudiant" className=''>Accéder aux logements étudiants</Link>
+            Accéder aux logements étudiants
           </div>
         </div>
 
@@ -148,94 +147,9 @@ function Acceuil(props) {
           </div>
         </section>
 
-        <section className="px-6 md:px-20 py-12 text-center md:text-left">
-          <div>
-            <h3 className="text-lg md:text-xl font-semibold">Offres Speciales</h3>
-          </div>
-          <div className='grid grid-cols-2 mt-[50px]'>
-            {tab.map((item) => (
-              <PromoCard
-                key={item.id}
-                title={item.title}
-                description0={item.description0}
-                description1={item.description1}
-                pourcentage={item.pourcentage}
-                description2={item.description2}
-                rang={item.rang}
-                description3={item.description3}
-                image={item.image} />
-            ))}
-            {tab1.map((item) => (
-              <PromoCard
-                key={item.id}
-                title={item.title}
-                description0={item.description0}
-                description1={item.description1}
-                pourcentage={item.pourcentage}
-                description2={item.description2}
-                rang={item.rang}
-                description3={item.description3}
-                image={item.image} />
-            ))}
-          </div>
-        </section>
+       
 
-        <section className="px-6 p-12 mr-[60px] ml-[60px]">
-          <div className="max-w-full mx-auto grid md:grid-cols-2 items-center gap-6">
-            <img
-              src="/images/21.jpg"
-              alt="clients heureux"
-              className="w-full h-auto object-cover rounded-md shadow-md"
-            />
-            <div className="space-y-4">
-              <h2 className="text-xl mt-[-40px] mb-[50px] md:text-2xl font-bold text-center text-[#072F5B]">
-                Pourquoi Choisir Notre Plateforme ?
-              </h2>
-              <ul className="text-[16px] space-y-2 pl-5 text-gray-800">
-                <li className="flex items-start pb-[20px] gap-2">
-                  <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
-                  <span>
-                    <span className="font-semibold text-black">
-                      Appartement & Chambre vérifiés
-                    </span>
-                  </span>
-                </li>
-                <li className="flex items-start pb-[20px] gap-2">
-                  <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
-                  <span>Réservation facile</span>
-                </li>
-                <li className="flex items-start pb-[20px] gap-2">
-                  <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
-                  <span>Assistance 24/7</span>
-                </li>
-                <li className="flex items-start pb-[20px] gap-2">
-                  <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
-                  <span>
-                    <span className="font-bold text-black">Large choix</span> de
-                    logement au meilleur prix!
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Pictogrammes */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-10 text-center">
-            <div className="bg-[#072F5B] text-white rounded-md py-6 px-4 shadow-lg">
-              <Home className="mx-auto mb-2 w-6 h-6" />
-              <p>Appartement vérifié</p>
-            </div>
-            <div className="bg-[#072F5B] text-white rounded-md py-6 px-4 shadow-lg">
-              <CalendarCheck className="mx-auto mb-2 w-6 h-6 text-blue-400" />
-              <p>Réservation facile</p>
-            </div>
-            <div className="bg-[#072F5B] text-white rounded-md py-6 px-4 shadow-lg">
-              <Headset className="mx-auto mb-2 w-6 h-6 text-blue-300" />
-              <p>Assistance 24/7</p>
-            </div>
-          </div>
-        </section>
-
+        
         <section className="px-6 p-12 mr-[70px] ml-[70px] max-w-full mx-auto">
           <div className="flex justify-between items-center ">
             <h2 className="text-lg font-semibold">Trouvez un logement adéquat</h2>
@@ -273,115 +187,8 @@ function Acceuil(props) {
           
         </section>
 
-        <section className="px-6 p-12 md:px-20">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h2 className="text-2xl font-bold text-[#072F5B] mb-6 flex items-center">
-                <span className="mr-2"><img src='/images/public-service (1).png' className='w-10' /></span> Nos Services
-              </h2>
-              <p className="mb-4">Voici ce que nous offrons à nos propriétaires :</p>
-              <ul className="space-y-4 text-gray-700 text-[16px]">
-                <li className="flex items-start gap-2">
-                  <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
-                  <div>
-                    <strong>Visibilité maximale</strong><br />
-                    Votre annonce est diffusée auprès de milliers de voyageurs chaque jour.
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
-                  <div>
-                    <strong>Support 7j/7</strong><br />
-                    Une équipe dédiée pour vous aider à tout moment.
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
-                  <div>
-                    <strong>Paiements sécurisés</strong><br />
-                    Nous gérons les transactions pour que vous soyez payé en toute sécurité.
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
-                  <div>
-                    <strong>Assurance incluse</strong><br />
-                    Une couverture contre les dommages pendant les séjours.
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
-                  <div>
-                    <strong>Outils de gestion faciles</strong><br />
-                    Tableau de bord complet pour suivre vos réservations, revenus, et messages.
-                  </div>
-                </li>
-                <li className="flex items-start gap-2">
-                  <Zap className="text-[#072F5B] w-5 h-5 mt-1" />
-                  <div>
-                    <strong>Évaluations fiables</strong><br />
-                    Chaque locataire est noté et vérifié, pour une tranquillité d'esprit.
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div className="flex justify-center">
-              <img
-                src="/images/25.jpg"
-                alt="Service"
-                className="rounded-md shadow-lg w-full h-[500px] mt-[10%] ml-4 max-w-md object-cover"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="px-6 p-12 md:px-20 ">
-          <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-            <div className="flex justify-center">
-              <img
-                src="/images/7.jpg"
-                alt="Propriétaires heureux"
-                className="rounded-md shadow-lg w-full max-w-md  object-cover"
-              />
-            </div>
-            <div className="space-y-4 pl-6 text-gray-800">
-              <div className="flex items-center space-x-3">
-                <img
-                  src="/images/l1.jpg"
-                  alt="Logo maison"
-                  className="w-10 h-10"
-                />
-                <h3 className="text-lg font-semibold text-[#072F5B]">Pour les Propriétaires</h3>
-              </div>
-              <h2 className="text-xl font-bold text-[#072F5B] ">
-                Vous souhaitez proposer des logements ?
-              </h2>
-              <p className="text-black  font-semibold">
-                Chillstays vous accompagne
-                de la mise en ligne à la location
-              </p>
-              <ul className="space-y-2 pl-5">
-                <li className="flex items-center font-semibold text-black">
-                <CheckCircle className="text-green-500 w-5 h-5 m-2" />
-                  Une visibilité accrue
-                </li>
-                <li className="flex items-center font-semibold text-black">
-                <CheckCircle className="text-green-500 w-5 h-5 m-2" />
-                  Des contacts sérieux
-                </li>
-                <li className="flex items-center font-semibold text-black">
-                <CheckCircle className="text-green-500 w-5 h-5 m-2" />
-                  Un outil de gestion adapté
-                </li>
-              </ul>
-
-              <div className="text-white rounded-md font-semibold pl-20">
-                <Button title="Contactez-Nous" />
-              </div>
-            </div>
-          </div>
-        </section>
+     
+       
       
       </div>
 
@@ -447,4 +254,4 @@ function Acceuil(props) {
   );
 }
 
-export default Acceuil;
+export default AcceuilEtudiant;
