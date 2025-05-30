@@ -13,7 +13,7 @@ import imageProduct from '/images/ved.jpg';
 import Footer from '../layaout/Footer';
 import { Link } from 'react-router-dom';
 
-function Acceuil(props) {
+function HomePage(props) {
   const tab = [{
     id: "1",
     title: "profitez d'offre exclusives, concues specialement pour vous",
@@ -451,4 +451,4 @@ function Acceuil(props) {
   );
 }
 
-export default Acceuil;
+export default HomePage;
