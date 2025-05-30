@@ -65,7 +65,7 @@ export default function NosPostesRecent() {
           <span className="text-base font-medium">Trier par:</span>
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className="cursor-pointer border border-gray-400 px-4 py-2 flex items-center justify-between w-40 bg-white shadow-sm"
+            className="cursor-pointer border border-gray-400 px-4 py-2 flex items-center justify-between w-40 bg-white shadow-xs"
           >
             <span className="capitalize">{selected}</span>
             <span className="ml-2 text-blue-900">▾</span>

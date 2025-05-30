@@ -75,7 +75,7 @@ function AcceuilEtudiant(props) {
           <Header />
         </div>
         <div className="flex flex-col items-center justify-center text-center text-white px-4 pt-48 md:pt-30">
-          <h1 className="text-3xl md:text-5xl uppercase font-extrabold bg-gradient-to-r from-white to-green-600 text-transparent bg-clip-text">
+          <h1 className="text-3xl md:text-5xl uppercase font-extrabold bg-linear-to-r from-white to-green-600 text-transparent bg-clip-text">
             Bienvenue sur ChillStays
           </h1>
           <p className="text-xl md:text-2xl mt-4">Trouvez des logements appropriés au Cameroun</p>
@@ -107,7 +107,7 @@ function AcceuilEtudiant(props) {
           <h3 className="text-lg md:text-xl font-semibold mb-2">
             Nos Postes Récents
           </h3>
-          <Button title="voir plus" className="bg-[#001F4D] text-white text-sm px-4 py-1 rounded hover:bg-blue-900" />
+          <Button title="voir plus" className="bg-[#001F4D] text-white text-sm px-4 py-1 rounded-sm hover:bg-blue-900" />
           </div>
           <hr className="border-t mt-1 border-gray-400 mb-6 w-1/3 w-full mx-auto md:mx-0" />
           <div className='mt-10'>
@@ -153,7 +153,7 @@ function AcceuilEtudiant(props) {
         <section className="px-6 p-12 mr-[70px] ml-[70px] max-w-full mx-auto">
           <div className="flex justify-between items-center ">
             <h2 className="text-lg font-semibold">Trouvez un logement adéquat</h2>
-            <Button title="voir plus" className="bg-[#001F4D] text-white text-sm px-4 py-1 rounded hover:bg-blue-900" />
+            <Button title="voir plus" className="bg-[#001F4D] text-white text-sm px-4 py-1 rounded-sm hover:bg-blue-900" />
           </div>
           <hr className="border-t mt-1 border-gray-400 mb-6 w-1/3 w-full mx-auto md:mx-0" />
 
@@ -180,7 +180,7 @@ function AcceuilEtudiant(props) {
               Vous recherchez un logement?
             </h3>
             <p className="text-sm text-gray-600 mb-4">N’hésitez plus !</p>
-            <Button title="Rechercher Un Logement" className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded shadow" />
+            <Button title="Rechercher Un Logement" className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-sm shadow-sm" />
           </div>
           </div>
 

@@ -46,7 +46,7 @@ export default function CarouselGroup() {
             key={idx}
             src={src}
             alt={`image-${idx}`}
-            className="w-full sm:w-1/2 md:w-1/3 p-3 flex-shrink-0 object-cover h-64"
+            className="w-full sm:w-1/2 md:w-1/3 p-3 shrink-0 object-cover h-64"
           />
         ))}
       </div>

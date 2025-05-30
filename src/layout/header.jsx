@@ -37,7 +37,7 @@ export default function Header() {
           <div className="flex gap-2 ml-10">
           <LanguageSelector />
           </div>
-          <Link to="publiezappartement" className="flex items-center gap-1 bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700 transition">
+          <Link to="publiezappartement" className="flex items-center gap-1 bg-green-600 text-white px-2 py-1 rounded-sm hover:bg-green-700 transition">
           <img src='/images/file.png' className='w-5 h-5' />
             <span>Publiez Votre Appartement</span>
           </Link>
@@ -54,7 +54,7 @@ export default function Header() {
           </span>
         </div>
 
-        <div className="hidden md:flex ml-4 items-center gap-1 text-sm cursor-pointer px-4 py-2 bg-[#28A745] text-white hover:underline rounded">
+        <div className="hidden md:flex ml-4 items-center gap-1 text-sm cursor-pointer px-4 py-2 bg-[#28A745] text-white hover:underline rounded-sm">
           <LogIn className="w-4 h-4" />
           Connexion
         </div>
@@ -82,7 +82,7 @@ export default function Header() {
                 <li className="flex px-4 py-2 hover:bg-gray-100 hover:text-black gap-2 cursor-pointer"><img src='/images/united-kingdom.png' className='w-5 h-5'  />Anglais</li>
               </ul>
             </div>
-            <button className="flex items-center gap-1 bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700 transition">
+            <button className="flex items-center gap-1 bg-green-600 text-white px-2 py-1 rounded-sm hover:bg-green-700 transition">
               <FileUp className="w-5 h-5" />
               <span>Publiez Votre Appartement</span>
             </button>
@@ -95,7 +95,7 @@ export default function Header() {
                 <FaWhatsapp className="w-4 h-4 mr-1" /> +237 674 589 172
               </span>
             </div>
-            <div className="mt-2 flex items-center gap-1 text-sm cursor-pointer px-4 py-2 bg-[#28A745] text-white hover:underline rounded w-max">
+            <div className="mt-2 flex items-center gap-1 text-sm cursor-pointer px-4 py-2 bg-[#28A745] text-white hover:underline rounded-sm w-max">
               <LogIn className="w-4 h-4" />
               Connexion
             </div>

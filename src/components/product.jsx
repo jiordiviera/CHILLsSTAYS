@@ -10,7 +10,7 @@ function Product(props) {
   };
 
   return (
-    <div className="bg-white shadow-sm overflow-hidden flex flex-col md:flex-row gap-4 p-6 max-w-[95%] mx-auto rounded-lg">
+    <div className="bg-white shadow-xs overflow-hidden flex flex-col md:flex-row gap-4 p-6 max-w-[95%] mx-auto rounded-lg">
 
       <div className="md:w-1/2 w-full relative">
         <img
@@ -21,7 +21,7 @@ function Product(props) {
         
          <button
           onClick={handleLikeToggle}
-          className="absolute top-3 right-3 flex items-center justify-center w-10 h-10 bg-white bg-opacity-90 border-2  rounded-full shadow hover:scale-110 transition">
+          className="absolute top-3 right-3 flex items-center justify-center w-10 h-10 bg-white bg-opacity-90 border-2  rounded-full shadow-sm hover:scale-110 transition">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill={liked ? 'red' : 'white'}

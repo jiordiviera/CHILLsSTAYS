@@ -19,7 +19,7 @@ export default function LanguageSelector() {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-36 bg-white text-black rounded shadow-lg z-50">
+        <div className="absolute right-0 mt-2 w-36 bg-white text-black rounded-sm shadow-lg z-50">
           <ul className="py-2">
             <li className="flex px-4 py-2 hover:bg-gray-100 gap-2 cursor-pointer"><img src='/images/france.png' className='w-5 h-5'  /> Français</li>
             <li className="flex px-4 py-2 hover:bg-gray-100 gap-2 cursor-pointer"><img src='/images/united-kingdom.png' className='w-5 h-5'  />Anglais</li>

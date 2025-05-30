@@ -10,7 +10,7 @@ export default function SearchBar() {
         <input
           type="text"
           placeholder="ville   ex: douala, yaoundé………"
-          className="outline-none w-full text-sm placeholder-gray-500"
+          className="outline-hidden w-full text-sm placeholder-gray-500"
         />
       </div>
 
@@ -20,7 +20,7 @@ export default function SearchBar() {
         <input
           type="text"
           placeholder="BUD budget"
-          className="outline-none w-full text-sm placeholder-gray-500"
+          className="outline-hidden w-full text-sm placeholder-gray-500"
         />
       </div>
 
@@ -30,7 +30,7 @@ export default function SearchBar() {
         <input
           type="date"
           placeholder="date"
-          className="outline-none w-full text-sm placeholder-gray-500"
+          className="outline-hidden w-full text-sm placeholder-gray-500"
         />
       </div>
 
